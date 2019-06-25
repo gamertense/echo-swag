@@ -1,10 +1,10 @@
 package handler
 
-// Controller example
+// Handler example
 type Handler struct {
 }
 
-// NewController example
+// NewHandler example
 func NewHandler() *Handler {
 	return &Handler{}
 }
