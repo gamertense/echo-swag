@@ -12,15 +12,15 @@ var (
 
 // User example
 type User struct {
-	ID    int    `json:"id" example:"1" format:"int64"`
-	Name  string `json:"name" xml:"name" form:"name" query:"name"`
-	Email string `json:"email" xml:"email" form:"email" query:"email"`
+	ID    int    `json:"id" example:"1" format:"int64"` //Auto-generated ID
+	Name  string `json:"name"`                          //User name
+	Email string `json:"email"`                         //User email
 }
 
 // AddUser example
 type AddUser struct {
-	Name  string `json:"name" xml:"name" form:"name" query:"name"`
-	Email string `json:"email" xml:"email" form:"email" query:"email"`
+	Name  string `json:"name" required:"true"`  //User name
+	Email string `json:"email" required:"true"` //User email
 }
 
 // UpdateUser example
